@@ -24,3 +24,14 @@ textarea {
     resize: none;
     box-sizing: border-box;
 }
+
+#load-list {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    background: white;
+    border: 1px solid black;
+    }
