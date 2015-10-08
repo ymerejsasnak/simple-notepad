@@ -2,6 +2,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    background: lightgray;
+}
+
 #buttons {
     width: 40%;
     margin: 0 auto;
@@ -26,14 +30,16 @@ textarea {
 }
 
 #load-list-container {
-    width: 50%;
-    height: 50%;
+    display: none;
+
+    padding: 1%;
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 40%;
 
     background: white;
     border: 1px solid black;
+    box-shadow: 5px 5px 2px black;
 }
 
 li:hover {

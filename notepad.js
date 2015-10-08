@@ -10,6 +10,7 @@ $(function() {
                         saveButton: $('#save'),
                         saveAsButton: $('#save-as'),
                         textArea: $('textarea'),
+                        loadListContainer: $('#load-list-container'),
                         loadList: $('ul')
                     };
 
@@ -35,10 +36,12 @@ $(function() {
                             document.title = fileName;
                             element.textArea.val(localStorage.getItem(SAVE_PREFIX + fileName));
                             element.textArea.focus();
+                            element.loadListContainer.hide();
                         },
 
                         showFiles: () => {
                             action.makeList(action.getFileNames());
+                            element.loadListContainer.show();
                         },
 
                         getFileNames: () => {
@@ -77,7 +80,7 @@ $(function() {
         action.saveAsText();
     });
 
-    //load button
+    //load button (shows saved 'files' but actual loading is done below)
     element.loadButton.on('click', () => {
         action.showFiles();
     });
