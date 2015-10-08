@@ -25,7 +25,7 @@ textarea {
     box-sizing: border-box;
 }
 
-#load-list {
+#load-list-container {
     width: 50%;
     height: 50%;
     position: absolute;
@@ -34,4 +34,8 @@ textarea {
 
     background: white;
     border: 1px solid black;
-    }
+}
+
+li:hover {
+    background: lightgray;
+}
